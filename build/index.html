@@ -13,15 +13,30 @@
       <h1>Pets!</h1>
     </header>
     <main>
+      <section id='new-pet'>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="breed">Breed</label>
+        <input type="text" name="breed" id="breed">
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age">
+        <label for="owner">Owner</label>
+        <input type="text" name="owner" id="owner">
+        <label for="about">About</label>
+        <textarea name="about" id="about"></textarea>
+        <input id="vaccinated" type="checkbox">
+        <label for="vaccinated">Vaccinated?</label><br>
+        <button id="add-pet" class="button">Add Pet</button>
+      </section></section>
       <section id='pet'></section>
-      <section id='pet-list'></section>
-      <section id='new-pet'></section>
+      <ul id='pet-list'></ul>
+
     </main>
 
     <!-- Templates -->
 
     <script id="pet-card-template" type="text/template">
-      <li><%- pet.name %></li>
+      <%- pet.name %> <button class="delete-pet button alert">Delete</button>
     </script>
 
     <script id="pet-info-template" type="text/template">
