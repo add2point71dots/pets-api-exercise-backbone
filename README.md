@@ -1,4 +1,8 @@
 # Backbone with Pets API
+An assigment completed during my time as a student at Ada Developers Academy.
+
+Original Instructions:
+----
 
 Create a single page application, using backbone, to interact with the [Pets API](https://github.com/AdaGold/pets_api). Instead of having static data written in app.js and losing data any data entered through the browser,   
 
